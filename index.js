@@ -47,11 +47,22 @@ class Person {
     this.stomach = [];
   }
 
-  eat("someFood") {
-    
+  eat(someFood) {
+    if (this.stomach.length < 10) {
+      console.log(this.name)
+      return this.stomach.push(someFood);
+    }
   }
 
+  poop() {
+    return this.stomach = [];
+  }
+
+  toString() {
+    return `${this.name}, ${this.age}`
+  }
 }
+
 
 /*
   TASK 2
